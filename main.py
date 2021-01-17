@@ -88,3 +88,31 @@ elif spc == "c":
     spslo("Thank you!!\n")
 time.sleep(1)
 os.system("clear")
+sp(red + bold + "Hello, my name is DarkBot. I am an advanced algorithm designed to make your life easier. Are you here for\na) Businees\nb) Leisure")
+while True:
+    sun = input(": ").lower()
+    if sun == "a":
+        biz = 1
+        break
+     elif sun == "b":
+        break
+     else:
+        sp("I don't understand!")
+if biz == 1:
+    sp("I see you are here for buisness. SO let's get down to it! Type in what you want we to do.")
+    while True:
+        sun = input(": ")
+        if (sun) == "web.search":    
+            try: 
+                from googlesearch import search 
+            except ImportError:  
+                sp("It looks like you computer does not support this engine. Sorry for this.\n") 
+            query = input("What are we searching?\n: ")
+            for j in search(query, tld="co.in", num=10, stop=10, pause=2): 
+                print(j) 
+        
+        
+   
+
+   
+    
